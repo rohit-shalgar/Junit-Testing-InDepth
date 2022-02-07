@@ -1,0 +1,20 @@
+@TestPropertySource - can be added on any test class, and provided with
+                      path to a property file which is specific to that particular test
+
+@TestPropertySource(locations= {"classpath:test-configuration.properties"})
+
+This has the highest precedence in terms of applying properties to any class.
+
+2)test/resources/application.properties
+    this file is specific to test folder.
+    overrides the app.properties in main src folder.
+    can be used when main app.properties has properties for real database.
+
+
+AssertJ - Assertions.assertThat
+            asserThat(expected).isEqualTo(actual)
+          Recommended for UT assertions.
+
+JSONPATH - https://github.com/in28minutes/spring-unit-testing-with-junit-and-mockito/blob/master/src/test/java/com/in28minutes/unittesting/unittesting/spike/JsonPathTest.java
+
+UnitTest patterns - XunitPatterns.com
