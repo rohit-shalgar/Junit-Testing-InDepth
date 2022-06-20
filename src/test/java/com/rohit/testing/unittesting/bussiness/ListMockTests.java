@@ -17,7 +17,7 @@ public class ListMockTests {
         mockedList.add("someSampleString");
         mockedList.add("someSampleStringAgain");
 
-        //on void methods, we can capture arguments passed and verify them.
+        //on methods, we can capture arguments passed and verify them.
         //captor.capture() can we used to verify the data type
         //captor.getValue() can be used to get actual value with which the mock is invoked.
         ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
